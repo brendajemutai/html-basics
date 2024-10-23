@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>/* External css*/
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .outer {
+        display: flex;
+        background: #324949;
+        justify-content: center; /*centre horizontally all the inner content*/
+        padding-bottom: 20px;
+        padding-top: 20px;
+        height: 500px;
+    }
+
+    .inner {
+        background: #333333;
+        width: 40%;
+        padding: 16px;
+    }
+
+    .inner p {
+        color: azure;
+    }
+
+    #shout {
+        color: #752f2f;
+        font-size: 1.1em;
+    }
+
+    .Container {
+        display: flex;
+        justify-content: space-evenly;
+        background: #555454;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .smaller {
+        width: 23%;
+        height: 120px;
+        background: #333333;
+        color: aliceblue;
+        font-size: 1.8em;
+        display: flex;
+        justify-content: center; /*horizontally*/
+        align-items: center; /*vertically*/
+
+    }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing <span id="shout">  elit. Consequuntur, cum delectus dignissimos  </span>eos explicabo hic impedit incidunt, iure libero, minima natus nostrum officia porro quasi qui rerum sed similique voluptas!</span><span>Consectetur cum deserunt distinctio dolor error molestias nostrum, optio quae quod. Accusantium blanditiis commodi deserunt dignissimos dolores ea esse exercitationem, facere illo itaque laborum minus odit, praesentium sunt unde voluptatum.</span>
+        </p>
+    </div>
+</div>
+<div class="Container">
+    <div class="smaller">1</div>
+    <div class="smaller">2</div>
+    <div class="smaller">3</div>
+    <div class="smaller">4</div>
+</div>
+<!--.container>smaller*4-->
+</div>
+</body>
+</html>
